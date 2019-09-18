@@ -163,9 +163,9 @@ equals.addEventListener("click", function(){
             let ans = eval(answer_box.value);
             answer_box.value = ans;
         }
-    } else {
-        answer_box.value == '';
-        }
+    } else if (answer_box.value == ''){
+        answer_box.value = 'invalid input: empty';
+    }
 });
 
 answer_box.addEventListener("keyup", function(event){
@@ -174,11 +174,11 @@ answer_box.addEventListener("keyup", function(event){
         if (answer_box.value.match(/[a-z]/i)){
             answer_box.value = 'invalid input: letters'
         } else {
-        let enter_ans = eval(answer_box.value)
-        answer_box.value = enter_ans;
+            let enter_ans = eval(answer_box.value)
+            answer_box.value = enter_ans;
         }
-    } else if (event.keyCode === 13){
+    } else if (event.keyCode === 13 && answer_box.value == ''){
         event.preventDefault();
-        answer_box.value = '';
+        answer_box.value = 'invalid input: empty';
     }
 });
