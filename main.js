@@ -156,20 +156,29 @@ karat.addEventListener("click", function(){
 
 /* equals */
 equals.addEventListener("click", function(){
-    if (answer_box.value == ''){
-        answer_box.value == '';
+    if (answer_box.value != ''){
+        if (answer_box.value.match(/[a-z]/i)) {
+            answer_box.value = 'invalid input: letters'
+        } else {
+            let ans = eval(answer_box.value);
+            answer_box.value = ans;
+        }
     } else {
-    let ans = eval(answer_box.value);
-    answer_box.value = ans;
-    }
+        answer_box.value == '';
+        }
 });
 
 answer_box.addEventListener("keyup", function(event){
     if(event.keyCode === 13 && answer_box.value != ''){
         event.preventDefault();
+        if (answer_box.value.match(/[a-z]/i)){
+            answer_box.value = 'invalid input: letters'
+        } else {
         let enter_ans = eval(answer_box.value)
         answer_box.value = enter_ans;
-    } else {
+        }
+    } else if (event.keyCode === 13){
+        event.preventDefault();
         answer_box.value = '';
     }
 });
