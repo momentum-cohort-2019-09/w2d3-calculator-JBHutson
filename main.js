@@ -156,14 +156,20 @@ karat.addEventListener("click", function(){
 
 /* equals */
 equals.addEventListener("click", function(){
+    if (answer_box.value == ''){
+        answer_box.value == '';
+    } else {
     let ans = eval(answer_box.value);
     answer_box.value = ans;
+    }
 });
 
 answer_box.addEventListener("keyup", function(event){
-    if(event.keyCode === 13){
+    if(event.keyCode === 13 && answer_box.value != ''){
         event.preventDefault();
         let enter_ans = eval(answer_box.value)
         answer_box.value = enter_ans;
+    } else {
+        answer_box.value = '';
     }
 });
