@@ -1,0 +1,77 @@
+.calc_num_button {
+    background-color: #61b34f;
+    border: solid white .02px;
+    color: white;
+    padding: 35px 35px;
+    text-align: center;
+    display: flex;
+    flex: 1 1 0px;
+    font-size: 12px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.calc_func_button {
+    background-color: #82c276;
+    border: solid white .02px;
+    color: white;
+    padding: 35px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex: 1 1 0px;
+    font-size: 12px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.calc_clear_button{
+    background-color: #4CAF50;
+    border-right:solid white .04px;
+    color: white;
+    padding: 35px 35px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-grow: 1;
+    font-size: 12px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.text_box{
+    display: flex;
+    border: 0;
+    flex-grow: 11;
+    background-color: #4CAF50;
+}
+
+.row_one {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
+
+.row_two {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
+
+.row_three{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
+
+.row_four{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
+
+.row_five{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
