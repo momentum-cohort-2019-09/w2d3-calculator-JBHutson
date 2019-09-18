@@ -22,7 +22,7 @@ const mod = document.getElementById("%");
 const karat = document.getElementById("^");
 
 
-/* change color of div while hover */
+/* div */
 div.addEventListener("mouseover", function(){
     div.style.color = 'white';
 });
@@ -35,7 +35,7 @@ div.addEventListener("click", function(){
     answer_box.value += '/';
 })
 
-/* change color of multi while hover */
+/* multi */
 multi.addEventListener("mouseover", function(){
     multi.style.color = 'white';
 });
@@ -48,7 +48,7 @@ multi.addEventListener("click", function(){
     answer_box.value += '*';
 })
 
-/* change color of minus while hover */
+/* minus */
 minus.addEventListener("mouseover", function(){
     minus.style.color = 'white';
 });
@@ -61,7 +61,7 @@ minus.addEventListener("click", function(){
     answer_box.value += '-';
 })
 
-/* change color of plus while hover */
+/* plus*/
 plus.addEventListener("mouseover", function(){
     plus.style.color = 'white';
 });
@@ -72,76 +72,93 @@ plus.addEventListener("mouseout", function(){
 
 plus.addEventListener("click", function(){
     answer_box.value += '+';
-})
+});
 
+/* one */
 one.addEventListener("click", function(){
     answer_box.value += '1';
-})
+});
 
+/* two */
 two.addEventListener("click", function(){
     answer_box.value += '2';
-})
+});
 
+/* three */
 three.addEventListener("click", function(){
     answer_box.value += '3';
-})
+});
 
+/* four */
 four.addEventListener("click", function(){
     answer_box.value += '4';
-})
+});
 
+/* five */
 five.addEventListener("click", function(){
     answer_box.value += '5';
-})
+});
 
+/* six */
 six.addEventListener("click", function(){
     answer_box.value += '6';
-})
+});
 
+/* seven */
 seven.addEventListener("click", function(){
     answer_box.value += '7';
-})
+});
 
+/* eight */
 eight.addEventListener("click", function(){
     answer_box.value += '8';
-})
+});
 
+/* nine */
 nine.addEventListener("click", function(){
     answer_box.value += '9';
-})
+});
 
+/* zero */
 zero.addEventListener("click", function(){
     answer_box.value += '0';
-})
+});
 
+/* dot */
 dot.addEventListener("click", function(){
     answer_box.value += '.';
-})
+});
 
+/* clear */
 clear.addEventListener("click", function(){
     answer_box.value = '';
-})
+});
 
+/* open_paren */
+open_paren.addEventListener("click", function(){
+    answer_box.value += '(';
+});
+
+/* close_peren */
+close_paren.addEventListener("click", function(){
+    answer_box.value += ')';
+});
+
+/* mod */
+mod.addEventListener("click", function(){
+    answer_box.value += '%';
+});
+
+/* karat */
+karat.addEventListener("click", function(){
+    answer_box.value += '**';
+});
+
+/* equals */
 equals.addEventListener("click", function(){
     let ans = eval(answer_box.value);
     answer_box.value = ans;
-})
-
-open_paren.addEventListener("click", function(){
-    answer_box.value += '(';
-})
-
-close_paren.addEventListener("click", function(){
-    answer_box.value += ')';
-})
-
-mod.addEventListener("click", function(){
-    answer_box.value += '%';
-})
-
-karat.addEventListener("click", function(){
-    answer_box.value += '**';
-})
+});
 
 answer_box.addEventListener("keyup", function(event){
     if(event.keyCode === 13){
@@ -149,4 +166,4 @@ answer_box.addEventListener("keyup", function(event){
         let enter_ans = eval(answer_box.value)
         answer_box.value = enter_ans;
     }
-})
+});

@@ -9,6 +9,7 @@
     font-size: 15px;
     margin: 0;
     cursor: pointer;
+    outline: none;
 }
 
 .calc_func_button {
@@ -23,6 +24,7 @@
     font-size: 15px;
     margin: 0;
     cursor: pointer;
+    outline: none;
 }
 
 .calc_clear_button{
@@ -37,9 +39,11 @@
     font-size: 15px;
     margin: 0;
     cursor: pointer;
+    outline: none;
 }
 
 .text_box{
+    outline: none;
     display: flex;
     border: 0;
     flex-grow: 5;
