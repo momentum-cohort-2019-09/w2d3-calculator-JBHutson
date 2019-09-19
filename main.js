@@ -202,6 +202,9 @@ equals.addEventListener("click", function(){
         } else if (answer_box.value.charAt(answer_box.value.length-1) == '/' || answer_box.value.charAt(answer_box.value.length-1) == '%'){
             answer_box.value = 'invalid input: missing divisor';
             answer_box.focus();
+        } else if (answer_box.value.charAt(answer_box.value.length-1) + answer_box.value.charAt(answer_box.value.length-2) == '**') {
+            answer_box.value = 'invalid input: missing exponent';
+            answer_box.focus();
         } else if (answer_box.value.charAt(answer_box.value.length-1) == '*'){
             answer_box.value = 'invalid input: missing multiplier';
             answer_box.focus();
@@ -235,6 +238,8 @@ answer_box.addEventListener("keyup", function(event){
             answer_box.value = 'invalid input: special character';
         } else if (answer_box.value.charAt(answer_box.value.length-1) == '/' || answer_box.value.charAt(answer_box.value.length-1) == '%'){
             answer_box.value = 'invalid input: missing divisor';
+        } else if (answer_box.value.charAt(answer_box.value.length-1) + answer_box.value.charAt(answer_box.value.length-2) == '**') {
+            answer_box.value = 'invalid input: missing exponent';
         } else if (answer_box.value.charAt(answer_box.value.length-1) == '*'){
             answer_box.value = 'invalid input: missing multiplier';
         } else if (answer_box.value.charAt(answer_box.value.length-1) == '+'){
